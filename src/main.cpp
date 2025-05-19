@@ -61,6 +61,11 @@ void handleOn() {
   
   // Display System status below the IP (adjust 60 as needed for your display)
   drawtext("System is ON", ST77XX_GREEN, 60);
+  
+  // Display address and water consumption
+  drawtext("0xeBd1...306f", ST77XX_WHITE, 100);
+  drawtext("Water Consumption:", ST77XX_WHITE, 140);
+  drawtext("12/h", ST77XX_BLUE, 180);
 }
 
 // Handle LED OFF
@@ -78,6 +83,11 @@ void handleOff() {
   
   // Display System status below the IP
   drawtext("System is OFF", ST77XX_RED, 60);
+  
+  // Display address and water consumption
+  drawtext("0xeBd1...306f", ST77XX_WHITE, 100);
+  drawtext("Water Consumption:", ST77XX_WHITE, 140);
+  drawtext("12/h", ST77XX_BLUE, 180);
 }
 
 void setup() {
